@@ -29,3 +29,14 @@ height = float(input("What is your height? "))
 weight = int(input("What is your weight (kg)? "))
 Bmi = weight / (height**2)
 print(int(Bmi))
+
+#----------------------------------
+
+# LifeinWeeks cal
+CurrentAge = int(input("What is your current age? "))
+MaximumAge = 90
+Numberofexpectedyears = (MaximumAge - CurrentAge)
+NumberOfDays = Numberofexpectedyears * 365
+NumberOfWeeks = Numberofexpectedyears * 52
+NumberofMonths = Numberofexpectedyears * 12
+print(f"You have {NumberOfDays} days, {NumberOfWeeks} weeks, and {NumberofMonths} left")
