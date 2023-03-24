@@ -40,3 +40,16 @@ NumberOfDays = Numberofexpectedyears * 365
 NumberOfWeeks = Numberofexpectedyears * 52
 NumberofMonths = Numberofexpectedyears * 12
 print(f"You have {NumberOfDays} days, {NumberOfWeeks} weeks, and {NumberofMonths} left")
+
+
+
+# tip calculator 
+Whatisthetotalbill = float(input("What is your total bill? "))
+AmountOfTip = int(input("What amount would you like to tip? 10? 12? 15? "))
+HowmanyPeople = int(input("How many people dined with you? "))
+Percentage = AmountOfTip / 100
+Newtotalbillaftertip = Whatisthetotalbill * Percentage
+EachPersonWillPay = (Whatisthetotalbill +  Newtotalbillaftertip) / (HowmanyPeople + 1)
+final_amount =  round(EachPersonWillPay,2)
+final_amount = "{:.2f}".format(EachPersonWillPay)
+print(f"Each person will pay: ${final_amount}")
