@@ -53,3 +53,24 @@ EachPersonWillPay = (Whatisthetotalbill +  Newtotalbillaftertip) / (HowmanyPeopl
 final_amount =  round(EachPersonWillPay,2)
 final_amount = "{:.2f}".format(EachPersonWillPay)
 print(f"Each person will pay: ${final_amount}")
+
+# if ^ else statements 
+
+#print("Welcome to the rollercoaster!")
+#height = int(input("what is your height in cm?"))
+
+#if height >= 120:
+ # print("you can ride")
+#else:
+ # print("sorry you can't ride come again when you are taller")
+
+
+
+number = int(input("Which number do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+if number % 2 == 0:
+    print("This is an even number")
+elif number % 2 > 0:
+    print("This is an odd number")
