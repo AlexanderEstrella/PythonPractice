@@ -74,3 +74,17 @@ if number % 2 == 0:
     print("This is an even number")
 elif number % 2 > 0:
     print("This is an odd number")
+  
+  
+  #leap year 
+  
+  Year=int(input("Which year do you want to check? "))
+firstleap = Year % 4
+Secondleap = Year % 100
+thirdleap = Year % 400
+
+if firstleap == 0 and Secondleap != 0 or thirdleap == 0:
+   print("Leap")
+else:
+  print("not")
+
