@@ -88,3 +88,26 @@ if firstleap == 0 and Secondleap != 0 or thirdleap == 0:
 else:
   print("not")
 
+
+  #Pizza delivery 
+  
+   print("Welcome to Python Pizza Deliveries!")
+Size = input("What is size Pizza do you want? S, M, L ")
+add_pepperoni = input("Do want you pepperoni? Y, N ")
+extra_cheese = input("Do want you extra cheese? Y, N ")
+bill = 0
+if Size == "L":
+ bill += 25
+elif Size == "M":
+  bill += 20
+else:
+ bill += 15
+if add_pepperoni == "Y" and Size == "S":
+ bill += 2
+elif add_pepperoni == "Y" and Size == "M" or Size == "L":
+ bill += 3
+if extra_cheese == "Y":
+ bill += 1
+
+  
+print(f"Your final bill is {bill}")
