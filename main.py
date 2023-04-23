@@ -132,3 +132,39 @@ if height >= 120:
   print(f"Final bill is {bill}")
 else:
   print("You can't ride")
+  
+  
+  
+  
+  # love calculator 
+  
+  name1 = input("What is your name? \n")
+name2 = input("What is your name? \n")
+newname = name1 + name2
+
+lowercasename = newname.lower() 
+
+t = newname.count("t")
+r = newname.count("r")
+u = newname.count("u")
+e = newname.count("e")
+true = t+r+u+e
+
+l = newname.count("l")
+o = newname.count("o")
+v = newname.count("v")
+e = newname.count("e")
+
+love = l+o+v+e
+
+random = str(true) + str(love)
+
+total_score = int(random)
+
+if total_score < 10 or total_score > 90:
+    print(f"Your score is {total_score}, you go together like coke and mentos.")
+elif total_score >= 40 and total_score <= 50:
+    print(f"Your score is {total_score}, you are alright together.")
+else:
+    print(f"Your score is {total_score}."
+)
