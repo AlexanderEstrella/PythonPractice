@@ -168,3 +168,26 @@ elif total_score >= 40 and total_score <= 50:
 else:
     print(f"Your score is {total_score}."
 )
+
+  
+  # treasure map game 
+  
+  print("Welcome to Treasure Island \n")
+print("Your Mission is to find the treasure")
+
+
+
+
+Directions = input("Do you want to go left or right?")
+if Directions == "left":
+    Move = input("Do you want to Swim or Wait?")
+    if Move == "Wait":
+        WhichDoor = input("Which door \n Red? blue? yellow?")
+        if WhichDoor == "Red" or WhichDoor == "Blue":
+            print("Game over")
+        elif WhichDoor == "Yellow":
+            print("you win!")
+    elif Move == "Swim":
+        print("Game over")
+elif Directions == "right":
+    print("Game over.")
